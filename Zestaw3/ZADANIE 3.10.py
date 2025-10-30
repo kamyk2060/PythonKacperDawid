@@ -27,8 +27,7 @@ for i in range(len(symbole)):
 
 rzymskie = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
 
-
-def RzymskieNaInt(liczba_rzymska):
+def roman2int(liczba_rzymska):
     liczba_arabska = 0
     poprzednia = 0
 
@@ -45,12 +44,12 @@ def RzymskieNaInt(liczba_rzymska):
     return liczba_arabska
 
 
-print(RzymskieNaInt("III"))     # 3
-print(RzymskieNaInt("IV"))      # 4
-print(RzymskieNaInt("IX"))      # 9
-print(RzymskieNaInt("XII"))     # 12
-print(RzymskieNaInt("XLV"))     # 45
-print(RzymskieNaInt("XC"))      # 90
-print(RzymskieNaInt("CD"))      # 400
-print(RzymskieNaInt("CM"))      # 900
-print(RzymskieNaInt("MCMXC"))   # 1990
+print(roman2int("III"))     # 3
+print(roman2int("IV"))      # 4
+print(roman2int("IX"))      # 9
+print(roman2int("XII"))     # 12
+print(roman2int("XLV"))     # 45
+print(roman2int("XC"))      # 90
+print(roman2int("CD"))      # 400
+print(roman2int("CM"))      # 900
+print(roman2int("MCMXC"))   # 1990
