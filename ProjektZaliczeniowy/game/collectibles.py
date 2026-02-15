@@ -112,10 +112,7 @@ class PowerUp:
         """Aktualizuje powerup (ruch w dół + unoszenie)."""
         self.y += scroll_speed
         
-        # Efekt unoszenia się (góra-dół)
-        # Używamy czasu gry do płynnej animacji
-        time = pygame.time.get_ticks()
-        self.float_offset = 8 * abs(pygame.math.Vector2(0, 1).rotate(time * 0.003).y)
+
 
     def draw(self, screen, ropes):
         """Rysuje powerup na ekranie."""
